@@ -1,0 +1,15 @@
+@"
+Binaries lourds
+*.mp4
+*.mov
+*.mkv
+*.avi
+*.glb
+*.exe
+*.zip
+*.7z
+*.rar
+Dossiers à exclure si besoin
+Audio/
+3D/
+"@ | Out-File -Encoding utf8 .gitignore

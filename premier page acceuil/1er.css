@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; 
+    overflow: hidden; 
+    font-family: 'Times New Roman', Times, serif; 
+    color: white; 
+}
+
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover; 
+    z-index: -1; 
+    filter: brightness(60%) blur(1px); 
+}
+
+.enter-button {
+    position: fixed;
+    left: 35%;
+    top: 61%;
+    display: flex;
+    width: 30%; 
+    height: 30%;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+
+.enter-button:hover {
+    transform: scale(1.03);
+}
+
+.enter-button:focus,
+.enter-button:active {
+    /* Supprime l'effet visuel que le navigateur ajoute au clic/focus */
+    outline: none;
+    border: none;
+    box-shadow: none; /* Utile si Bootstrap ou un autre style ajoute une ombre */
+}
+
+.logo {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px; 
+    height: auto;
+    
+    z-index: 10;
+}
+
+
+.main-text {
+    color: #fffefe88; 
+    
+    position: fixed;
+    top: 65%;
+    font-size: 3em;
+    font-family: 'Impact', fantasy;
+    text-shadow: 
+        -1.8px 0px 0 #000000, 
+        2px -2px 0 #000, 
+        3px 3px 0 #000, 
+        5px 5px 0 #050505,
+        0 0 15px rgba(255, 150, 150, 0.7); 
+    margin-bottom: 20px !important;
+}
+
+.opacite{
+    opacity: 0.3;
+}

@@ -1,0 +1,83 @@
+/* --- Variables et Réinitialisation de base --- */
+:root {
+    --couleur-sombre: #101010;
+    --couleur-sang: #8b0000;
+    --couleur-metal: #a0a0a0;
+    --couleur-lueur: #ff0000; /* Rouge vif pour le texte */
+}
+
+
+/* .positionRelative
+{
+    position: sticky !important;
+    width: 100%;
+    top: 20px;
+
+} */
+
+/* --- Configuration du Body (Fond du Château) --- */
+
+.navbar.main-navbar {
+    background-color: rgba(0, 0, 0, 0.8) !important;
+    border-bottom: 2px solid #5a4b3d;
+}
+
+.navbar-logo {
+    width: 80px; 
+    height: 70px;
+}
+
+.navbar-title {
+    color: var(--couleur-lueur) !important;
+    font-family: 'Times New Roman', serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.8); 
+}
+
+.navbar-centre-links {
+    height: 50px;
+}
+
+.mystery-box {
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-decoration: none;
+    background-image: url('../ImageAutre/ContourBouton.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent; 
+}
+
+.box-text {
+    color: var(--couleur-lueur);
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-shadow: 0 0 5px rgb(71, 3, 3);
+}
+
+.mystery-box:hover .box-text {
+    color: rgb(255, 255, 255);
+}
+
+.nav-button {
+    padding: 8px 15px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #f0e6d2 !important; 
+    background-color: #380000 !important; 
+    border: 1px solid #7c0000 !important; 
+}
+
+.nav-button:hover {
+    background-color: #550000 !important; 
+    border-color: #ff0000 !important;
+    color: white !important;
+}
