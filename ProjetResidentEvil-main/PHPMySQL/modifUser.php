@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $stmt = $pdo->prepare($sql);
             
             $stmt->execute([$nom, $prenom, $age, $sexe, $email, $id]);
-                header('Location: inscrit.php');
+                header('Location: pageInscription.php');
                 exit;
             } 
             catch (PDOException $e){
