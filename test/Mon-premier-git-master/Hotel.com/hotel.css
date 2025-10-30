@@ -1,0 +1,360 @@
+
+                                /*Display */
+.flex
+{
+    display: flex;
+}
+
+                                /* Justify-Content */
+
+.justifySpaceBetween
+{
+    justify-content: space-between;
+}
+
+.justifySpaceAround
+{
+    justify-content: space-around;
+}
+
+.justifyCenter
+{
+    justify-content: center;
+}
+
+.justifyFlexStart
+{
+    justify-content: flex-start;
+}
+
+.justifyFlexEnd
+{
+    justify-content: flex-end;
+}
+
+                            /* Align-Items */
+
+.alignFlexStart
+{
+    align-items: flex-start;
+}
+
+.alignFlexEnd
+{
+    align-items: flex-end;
+}
+
+.alignCenter
+{
+    align-items: center;
+}
+
+                                /* Flex-Direction */
+
+.directionColumn
+{
+    flex-direction: column;
+}
+
+.directionRow
+{
+    flex-direction: row;
+}
+
+                                /*Couleurs  */
+body
+{
+    background-color: rgb(228, 220, 220);
+}
+.Noir
+{
+    background-color: black;
+}
+
+.Blanc
+{
+    background-color: white;
+}
+
+.Orange
+{
+    background-color: orange;
+}
+.Vert
+{
+    background-color: green;
+}   
+
+.Bleu
+{
+    background-color: blue;
+}   
+
+.VertJaune
+{
+    background-color: greenyellow;
+}
+
+.Violet
+{
+    background-color: purple;
+}
+
+.Jaune
+{
+    background-color: yellow;
+}
+
+.Rouge
+{
+    background-color: red;
+}
+
+.Gris
+{
+    background-color: gray;
+}
+
+.Cuivre
+{
+    background-color: orangered;
+}
+
+.Rose
+{
+    background-color: pink;
+}
+
+.Cyan
+{
+    background-color: aqua;    
+}
+
+.Beige
+{
+    background-color: #f3ece6;
+}
+
+.imageFond
+{
+    background-image: url(Image/Hcom_Hero_Banner_Masked.webp);
+    background-position: center;
+    background-size: cover;
+}
+                                            /*Paragraphe */
+
+.paragrapheBlanc
+{
+    color: white;
+}
+
+.paragrapheNoir
+{
+    color: black;
+}
+
+.paragrapheGris
+{
+    color: gray;
+}
+
+.paragrapheRouge
+{
+    color: red;
+}
+
+.paragrapheBleu
+{
+    color: blue;
+}
+.embed{
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 24px;
+}
+
+                                            /* Marge */
+
+.margeTopBarre
+{
+    margin-top: 2%;
+}
+
+.margeLogo
+{
+    margin-left: 5%;
+}
+
+.margeDroiteNav
+{
+    margin-right: 30px;
+}
+
+.margeGaucheNav
+{
+    margin-right: 120px;
+}
+
+.margeGaucheVoyage
+{
+    margin-left: 3%;
+}
+
+.margeImageTelecharger
+{
+    margin-left: 5px;
+}
+
+.margeTopDroite
+{
+    margin-top: 1%;
+}
+.margeFrance
+{
+    margin-left: 8px;
+}
+
+.margeBottomBarre
+{
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+}
+                                            /* Padding */
+.ODVR
+{
+    width: 90%;
+    height: 25%;
+    border-radius: 20px;
+}
+.margeBottomRecherche
+{
+    margin-top: -110px;
+    margin-bottom: 10px;
+}
+
+                                            /* Hauteur */
+.largeurFond
+{
+    width: 80%;
+    margin-left: 10%;
+}
+
+.hauteurFond
+{
+    height: 600px;
+}
+
+/* Largeur */
+.margeBarre
+{
+    width: 80%;
+    margin-left: 7%;
+}
+
+.largeurApplication
+{
+    width: 110px;
+}
+
+.largeurPublier
+{
+    width: 200px;
+}
+/* Gappeur */
+
+.gappeur
+{
+    gap: 10px;
+}
+
+/*Border */
+.borderApplication
+{
+    border: solid black 1px;
+    border-radius: 20px;
+    padding: 8px 20px ;
+}
+
+.fleche
+{
+    border: none;
+    color: red;
+    padding: -20px;
+}
+
+.borderFond
+{
+    border-radius: 30px;
+}
+
+.borderNav
+{
+    box-shadow: 0 4px 2px rgba(0, 0, 0, 0.1);
+    padding-bottom: 25px;
+}
+
+.arrondieCenter
+{
+    border: 1px solid black ;
+    border-radius: 15px;
+}
+.paddingODV
+{
+    width: 350px;
+    height: 80px;
+}
+
+.boutonRecherche
+{
+    padding: 20px 30px 20px 30px;
+    border-radius: 30px;
+    font-size: larger;
+}
+.margeDroiteR
+{
+    margin-right: 2%;
+}
+.paddingIntODV
+{
+    margin-left: 10%;
+}
+
+
+/* Barre Noir  */
+
+.imageEtiquette
+{
+    height: 100px;
+    width: 50px;
+}
+
+.fondNoir
+{
+    width: 80%;
+}
+
+.margeFondNoir
+{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.margeEtiquette
+{
+    margin-left: 1%;
+}
+
+.margeSC
+{
+    margin-left: 39%;
+}
+
+/* Les trois Site hébergement */
+
+.borderT
+{
+    padding: 20px;
+}
+

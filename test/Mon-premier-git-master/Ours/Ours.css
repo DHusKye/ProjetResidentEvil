@@ -1,0 +1,318 @@
+                                /* Tout corps de texte */
+*
+{
+    font-family: "Outfit", sans-serif;
+}
+
+                                /*Display */
+.flex
+{
+    display: flex;
+}
+
+                                /* Justify-Content */
+
+.justifySpaceBetween
+{
+    justify-content: space-between;
+}
+
+.justifySpaceAround
+{
+    justify-content: space-around;
+}
+
+.justifyCenter
+{
+    justify-content: center;
+}
+
+.justifyFlexStart
+{
+    justify-content: flex-start;
+}
+
+.justifyFlexEnd
+{
+    justify-content: flex-end;
+}
+
+                            /* Align-Items */
+
+.alignFlexStart
+{
+    align-items: flex-start;
+}
+
+.alignFlexEnd
+{
+    align-items: flex-end;
+}
+
+.alignCenter
+{
+    align-items: center;
+}
+
+                                /* Flex-Direction */
+
+.directionColumn
+{
+    flex-direction: column;
+}
+
+.directionRow
+{
+    flex-direction: row;
+}
+
+                                /*Couleurs  */
+body
+{
+    background-color: rgb(228, 220, 220);
+}
+.Noir
+{
+    background-color: black;
+}
+
+.Blanc
+{
+    background-color: white;
+}
+
+.Orange
+{
+    background-color: orange;
+}
+.Vert
+{
+    background-color: green;
+}   
+
+.Bleu
+{
+    background-color: blue;
+}   
+
+.VertJaune
+{
+    background-color: greenyellow;
+}
+
+.Violet
+{
+    background-color: purple;
+}
+
+.Jaune
+{
+    background-color: yellow;
+}
+
+.Rouge
+{
+    background-color: red;
+}
+
+.Gris
+{
+    background-color: gray;
+}
+
+.Cuivre
+{
+    background-color: orangered;
+}
+
+.Rose
+{
+    background-color: pink;
+}
+
+.Cyan
+{
+    background-color: aqua;    
+}
+
+                                            /*Paragraphe */
+
+.paragrapheBlanc
+{
+    color: white;
+}
+
+.paragrapheNoir
+{
+    color: black;
+}
+
+.paragrapheGris
+{
+    color: gray;
+}
+
+.fontSizeTitre
+{
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.paragrapheBleu
+{
+    color: rgb(19, 116, 243);
+}
+
+.opaciteOursFamille
+{
+    opacity: 0.8;
+}
+
+.paragrapheOursImage
+{
+    font-weight: 700;
+    
+}
+
+
+.fontNav
+{
+    font-weight: 600;
+}
+
+.paragrapheOursFamillie
+{
+    font-weight: 600;
+}
+
+.paragrapheOpac
+{
+    opacity: 0.6;
+}
+
+.paragrapheApropos
+{
+    font-size: larger;
+}
+
+                                            /* Gappeur Marge Padding  */
+
+.gappeur
+{
+    gap: 20px;
+}
+
+.margeImageTop
+{
+    margin-top: 50px;
+}
+
+.margeTitreBottom
+{
+    margin-bottom: -40px;
+}
+
+.margeTitreTop
+{
+    margin-top: -30px;
+}
+
+.margeGauche
+{
+    margin-left: 30px;
+}
+.margeParagraphe
+{
+    margin-left: 20px;
+}
+
+.margeImageLivre
+{
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.margeTexteLivre
+{
+   margin-bottom: 40px; 
+   margin-top: -8px;
+}
+
+.largeurApropos
+{
+    width: 85%;
+    margin-left: 8%;
+}
+
+.margeBoutonLire
+{
+   padding-top: 10px;
+}
+                                            /* Largeur Hauteur */
+
+.heightOursFamillie
+{
+    height: 750px;
+}
+
+.ImageOursFamillie
+{
+    width: 1600px;
+}
+
+.margeGauche
+{
+    margin-left: 20px;
+}
+
+.boutonLire
+{
+    width: 15%;
+    height: 11%;
+}
+.boutonInterieurLire
+{
+    padding: 0px;
+
+}
+
+.margeBottomApropos
+{
+    margin-bottom: 20px;
+}
+
+
+                                            /* Arrondie */
+
+.arrondieCarre
+{
+    border-radius: 20px 20px 0px 0px;
+}
+
+.arrondieCarreArticle
+{
+    border-radius: 20px;
+}
+
+                                        /* Image */
+
+.backgroundImageOurs
+{
+    background-image: url(Image/Ours\ Famillie.jpg);
+    background-position: center;
+    box-shadow: inset 0 1rem 2em black;
+}
+
+
+.ImageOursChasse
+{
+    height: 200px;
+}
+
+.ImageLivre
+{
+    width : 150px; height : 150px;
+    border-radius: 50%;
+}
+
+

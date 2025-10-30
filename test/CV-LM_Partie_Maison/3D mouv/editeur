@@ -1,0 +1,6 @@
+ <model-viewer src = "Image/HTML.glb" camera-controls autoplay>
+        </model-viewer>
+        <model-viewer src = "Image/CSS.glb" camera-controls autoplay>
+        </model-viewer>
+        <model-viewer src = "Image/PC.glb" camera-controls autoplay>
+        </model-viewer>

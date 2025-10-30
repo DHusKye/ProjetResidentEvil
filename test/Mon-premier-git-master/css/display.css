@@ -1,0 +1,505 @@
+.base_cube
+{
+    display: flex;
+}
+.separation_cube
+{
+    display: flex;
+    padding: 10px;
+}
+
+.purple_cube
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: purple;
+    padding: 60px;
+    height: 600px;
+    width: 300px;
+}
+
+.pink_cube
+{
+    display: flex;
+    justify-content: center;
+    background-color: pink;
+    padding: 60px;
+    width: 160px;
+}
+
+.yellow_cube
+{
+    display: flex;
+    flex-direction: column;
+    background-color: yellow;
+    padding: 20px;
+    margin-right: 10px;
+}
+
+.yellow2_cube
+{
+    display: flex;
+    flex-direction: column;
+    background-color: yellow;
+    padding: 20px;
+    margin-left: 5px;
+}
+
+.green_cube
+{
+    display: flex;
+    background-color: green;
+    padding: 30px;
+    margin-bottom:10px;
+}
+
+.green2_cube
+{
+    display: flex;
+    flex-direction: column;
+    background-color: green;
+    padding: 30px;
+    margin-top: 10px;
+}
+
+/* Version du formateur*/
+
+.square 
+{
+    width: 100px;
+    height: 100px;
+}
+.shityColor
+{
+    background-color: rgb(77, 65, 45);
+}
+.margin10
+{
+    margin: 10px;
+}
+
+.ws
+{
+    background-color: pink;
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+
+
+
+
+
+/* CSS sans effet sur les cours */
+
+hr
+{
+    padding: 10px;
+    background-color: black;
+}
+
+/* Nouvelles exercice */
+
+
+.fond
+{
+    background-color: black ;
+    opacity: 0.7;
+    height: 130px;
+    margin: 10px;
+}
+
+
+/* Partie des couleurs */
+
+.Noir
+{
+    background-color: black;
+}
+
+.Blanc
+{
+    background-color: white;
+}
+
+/* Partie 1 du rectangle*/
+.Orange
+{
+    background-color: orange;
+}
+.Vert
+{
+    background-color: green;
+}   
+.Bleu
+{
+    background-color: blue;
+}   
+
+/*Partie 2 du rectangle*/ 
+
+.VertJaune
+{
+    background-color: greenyellow;
+}
+.Violet
+{
+    background-color: purple;
+}
+.Jaune
+{
+    background-color: yellow;
+}
+
+/* Partie 3 du rectangle */
+.Rouge
+{
+    background-color: red;
+}
+.Gris
+{
+    background-color: gray;
+}
+.Cuivre
+{
+    background-color: orangered;
+}
+
+.Rose
+{
+    background-color: pink;
+}
+
+/* Partie des hauteurs et forme */
+.size
+{
+    height: 50px;
+    width: 50px;
+}
+
+
+/* Partie Flex */
+
+.flexCommandant
+{
+    display: flex;
+}
+
+/* Partie ecart des formes */
+
+.items
+{
+    align-items: center;
+}
+
+.ecartCommandantCenter
+{
+    justify-content: center;
+}
+
+.ecartCommandantSpaceAround
+{
+    justify-content: space-around; 
+}
+.ecartCommandantSpaceBetween
+{
+  justify-content: space-between;
+}
+.ecartCommandantFlexEnd
+{
+    justify-content: flex-end;
+}
+.ecartCommandantFlexStart
+{
+    justify-content: flex-start;
+}
+
+.directionCommandantColumn
+{
+    flex-direction: column;
+}
+/* Partie Radius des carres */
+
+.arrondieCarre
+{
+    border-radius: 10px;
+}
+
+/* Partie Radius des ronds */
+
+.arrondieRond
+{
+    border-radius: 40px;
+}
+
+/* Marge et padding des rectangle */
+
+.margeGauche
+{
+    margin-left: 15px;
+}
+.margeDroit
+{
+    margin-right: 15px;
+}
+.margeCentre
+{
+    margin-left:15px;
+    margin-right:15px ;
+}
+
+/* Animation et Transition */
+
+.barre
+{
+    width: 15px;
+    height: 70px;
+    border-radius: 5px;
+}
+
+/* Partie des mouvements */
+
+
+/* From =d'ou je viens donc le depart et To =comment il arrivent donc a la fin */
+
+/* Rond qui monte et descend */
+
+/* 3eme Case Noir */
+
+.animationMouvement
+{
+    animation-duration: 1s;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+}
+
+.topCentreMouvement
+{
+   animation-name: tourne;
+}
+
+@keyframes tourne 
+{
+    0% 
+    {
+        transform: translate(0,-30px);
+    }
+
+    100% 
+    {
+        transform: translate(0,0);
+    }
+
+}
+
+
+/* Carre qui va de centre a droite*/
+
+.droiteCentreMouvement
+{
+    animation-name: droiteCentre;
+}
+
+
+@keyframes droiteCentre
+{
+    0%  
+    {
+        transform: translate(50px,0);
+    }
+
+    100%
+    {
+        transform: translate(0,0);
+    }
+}
+
+/* Carre qui va de centre a gauche */
+
+.gaucheCentreMouvement
+{
+    animation-name: gaucheCentre;
+}
+
+@keyframes gaucheCentre
+{
+    0% 
+    {
+        transform: translate(-50px,0);
+    }
+
+    100%
+    {
+        transform: translate(0,0);
+    }
+}
+
+/* 2 eme Case Noir */
+
+.barreGaucheTourne
+{
+    animation: barreGauche 2s linear infinite;
+}
+
+@keyframes barreGauche
+{
+ from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+
+
+}
+
+.barreDroiteTourne
+{
+    animation: barreDroite 2s linear infinite;
+}
+
+@keyframes barreDroite
+{
+    from{
+        transform: rotate(0deg);
+    }
+    to
+    {
+        transform: rotate(-360deg);
+    }
+}
+
+.rotationInfinie
+{
+    animation: rotationInfinie 0.1s linear infinite;
+}
+
+@keyframes rotationInfinie 
+{
+    from
+    {
+        transform: rotate(0deg);
+    }
+    to
+    {
+        transform: rotate(360deg);
+    }
+}
+
+/* 1er Case Noir */
+
+.taille:hover{
+    border-radius: 50%;
+    transition: all 0.5s ;
+    background-color: orangered;
+}
+
+.cercleGros:hover
+{
+    transition: all 0.5s;
+    background-color: aqua;
+    height: 60px;
+    width: 60px;
+}
+
+.carreAngle:hover
+{
+    border-radius: 0%;
+    transition: all 0.5s; 
+    background-color: yellow;
+}
+
+
+/* Derniere exercice */
+
+/* Premiere div */
+
+/* Logo */
+
+.margeGauche
+{
+    margin-left: 10px;
+}
+
+.margeDroite
+{
+    margin-right: 10px;
+}
+
+.logoLargeur
+{
+    width: 8%;
+}
+
+.logoBlue
+{
+   background-color: rgb(40, 140, 221); 
+}
+
+.grasLogo
+{
+    font-weight: 700;
+}
+
+/* Navigation */
+
+.navLargeur
+{
+    width: 70%;
+}
+
+/* Recherche */
+
+.rechercheLargeur
+{
+    width: 20%;
+}
+
+.arrondieInput
+{
+    border-radius: 100px;
+    height: 30px;
+    width: 150px;
+}
+
+.navInterieurLargeur
+{
+    padding: 2%;
+}
+.paddingInterneRecherche
+{
+    padding: 10px 20px 10px 20px;
+    opacity: 0.5;
+}
+
+.paddingBoutonRecherche
+{
+    padding: 7px 12px 7px 12px;
+}
+
+
+.asideGauche
+{
+    float: left ;
+}   
+
+.asideDroite
+{
+    float: right ;
+}
+
+.asideTaille
+{
+    height: 100%;
+    width: 150px;
+    padding: 5px;
+}
+
+.gap
+{
+    gap: 10px;
+}

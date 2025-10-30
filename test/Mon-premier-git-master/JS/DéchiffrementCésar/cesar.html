@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cesar.css">
+    <link rel="icon" href="">
+    <title>Déchiffrement César</title>
+</head>
+
+
+
+
+<body class="flex chiffrer bodyCHDE bg-primary">
+
+<div class="flex axeBouton borderCHDE">
+    
+    <div class="chiffrer flex directionColumn margeInt gappeur ">
+
+        <div>
+            <h3>Chiffrer</h3>
+        </div>
+
+        <div>
+            <p>Texte en clair</p>
+        </div>
+
+        <div id="commentaireChiffrement">
+            <textarea name="commentaire" id="inputTexteCommentaire" rows="10" cols="50" placeholder="Tape ton message içi ..." ></textarea>
+        </div>
+
+        <div>Décalage (nombre de lettre)</div>
+
+        <input type="number"  name="nombreChiffre" class="inputNombre" id="decalageNombreChiffrement">
+
+        <div class="Bleu arrondieBouton tailleBouton borderBouton" id="nombreChiffrement">
+            <p class="paragrapheBlanc flex justifyCenter alignCenter ">Bouton Chiffrer</p>
+         </div>
+
+        <div class="arrondieBouton tailleBouton borderBouton" id="effacerChiffrement">
+            <p class="paragrapheBleu flex justifyCenter alignCenter">Effacer</p> 
+        </div>
+
+        <div>Résultat (chiffré)</div>
+
+        <div><textarea name="resultat" id="resultatChiffrement" rows="10" cols="50" placeholder="Tapeton message ici ... "></textarea></div>
+
+    </div>
+
+</div>
+
+<div class="flex axeBouton borderCHDE margeInt">  
+
+    <div class="chiffrer flex directionColumn margeInt gappeur ">
+
+        <div><h3>Déchiffrer</h3></div>
+
+        <div><p>Texte chiffré</p></div>
+
+        <div>
+            <textarea name="commentaire" id="commentaireDechiffrement" rows="10" cols="80" placeholder="Tape ton message içi ..." ></textarea>
+        </div>
+
+        <div>Décalage utilisé (nombre de lettre)</div>
+
+        <input type="number" name="nombreDechiffre" class="inputNombre" id="decalageNombreDechiffrement">
+
+        <div class="arrondieBouton tailleBouton borderBouton Vert" id="nombreDechiffrement">
+            <p class="flex justifyCenter alignCenter paragrapheBlanc">Déchiffrement</p> 
+        </div>
+
+
+        <div class="arrondieBouton tailleBouton borderBouton Jaune " >
+            <p class="flex justifyCenter alignCenter paragrapheNoir">Brute-force (tous les décalages)</p> 
+        </div>
+
+
+        <div class="arrondieBouton tailleBouton borderBouton" id="effacerDechiffrement">
+            <p class="paragrapheBleu flex justifyCenter alignCenter">Effacer</p> 
+        </div>
+
+        
+        <div>Résultat (décrypté)</div>
+
+        <div><textarea name="resultat" id="resultatDechiffrement" rows="10" cols="80" placeholder="Tapeton message ici ... "></textarea></div>
+
+
+    </div>
+    
+</div>
+
+
+
+    <script src="cesar.js"></script>
+
+</body>
+</html>
+
+
+
+
