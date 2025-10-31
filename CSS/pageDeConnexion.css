@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; 
+    overflow: hidden; 
+    font-family: 'Times New Roman', Times, serif; 
+    color: white; 
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover; 
+    z-index: -1; 
+    filter: brightness(60%) blur(1px); 
+}
+
+.encadrement{
+    position: fixed;
+    top: 35%;
+    width: 27%;
+   
+
+}
+
+.background_encadrement{
+    position: fixed;
+    top: 48.5%;
+    width: 21%;
+    height: 26.8%;
+    background-color: rgba(48, 48, 48, 0.4); 
+
+}
+
+h1{
+    position: fixed;
+    color: rgb(43, 4, 4);
+    top: 50%;
+    font-family: 'Nosifier', serif;
+    text-shadow: 2px 2px 5px black;
+    left: 48%;
+}
+
+
+
+
+/* --- Style des Champs et du Texte --- */
+.login-label {
+    position: fixed;
+    color: rgb(43, 4, 4);
+    display: block; 
+    top: 55%;
+    left: 45%;
+    text-shadow: 2px 2px 5px black;
+    font-size: 20px;
+}
+.login-label1 {
+    position: fixed;
+    color: rgb(43, 4, 4);
+    display: block; 
+    top: 62%;
+    left: 45%;
+    text-shadow: 2px 2px 5px black;
+    font-size: 20px;
+}
+
+.login-input {
+    background-color: rgba(48, 48, 48, 0.5); 
+    border: 1px solid #CC0000; 
+    color: rgb(253, 0, 0); 
+    position: fixed;
+    top: 57%;
+    width: 10%;
+    left: 45%;
+}
+
+
+.login-input1 {
+    background-color: rgba(48, 48, 48, 0.5);  
+    border: 1px solid #CC0000; 
+    color: rgb(253, 0, 0); 
+    position: fixed;
+    top: 64%;
+    width: 10%;
+    left: 45%;
+}
+
+
+/* Style du bouton d'inscription */
+.login-btn {
+    background-color: #4e0202; 
+    border-color: #ff0000;
+    font-family: 'Creepster', cursive;
+    padding: 15px 1; 
+    position: fixed;
+    top: 70%;
+    left: 47%;
+    color: black;
+    font-family: 'Nosifier', serif;;
+    font-size: 20px;
+}

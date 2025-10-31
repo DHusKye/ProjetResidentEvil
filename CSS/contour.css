@@ -1,0 +1,64 @@
+ 
+        
+        /* Cadre Néon Apocalyptique */
+        .frame-neon {
+            border: 6px solid #ff0000;
+            background: linear-gradient(145deg, #1603032d 0%, #1a0f08 100%);
+            padding: 30px;
+            box-shadow: 
+                0 0 10px #ff0000,
+                0 0 20px #ff0000,
+                0 0 30px #ff0000,
+                inset 0 0 20px rgba(0, 255, 21, 0.2),
+                inset 0 0 40px rgba(0, 0, 0, 0.8);
+            animation: neon-flicker 3s infinite alternate;
+            position: relative;
+            border-radius: 15px;
+        }
+        
+        @keyframes neon-flicker {
+            0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+                box-shadow: 
+                    0 0 10px #ff0000,
+                    0 0 20px #ff0000,
+                    0 0 30px #ff0000,
+                    inset 0 0 20px rgba(255, 0, 0, 0.2),
+                    inset 0 0 40px rgba(0, 0, 0, 0.8);
+                border-color: #ff0000;
+            }
+            20%, 24%, 55% {
+                box-shadow: 
+                    0 0 5px #ff0000,
+                    inset 0 0 40px rgba(0, 0, 0, 0.8);
+                border-color: #cc0000;
+            }
+        }
+        
+        /* Coins lumineux */
+        .corner-glow {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: #ff0000;
+            box-shadow: 0 0 20px #ff0000;
+            animation: corner-pulse 2s infinite;
+            border-radius: 50%;
+        }
+        
+        .corner-glow.top-left { top: -3px; left: -3px; }
+        .corner-glow.top-right { top: -3px; right: -3px; }
+        .corner-glow.bottom-left { bottom: -3px; left: -3px; }
+        .corner-glow.bottom-right { bottom: -3px; right: -3px; }
+        
+        @keyframes corner-pulse {
+            0%, 100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+            50% {
+                opacity: 0.5;
+                transform: scale(1.2);
+            }
+        }
+        
+

@@ -1,0 +1,51 @@
+/* Page d'accueil */
+
+.accueil{
+    background: url(../ImageResidentEvil/Resident-Evil-Villagehomme.jpg);
+    background-size: cover;
+}
+
+.titreAccueil
+{
+    margin-top: 500px;
+}
+
+.logoAccueil
+{
+    height: 250px;
+    width: 250px;
+    margin-top: -60px;
+}
+
+.boutonEntrer
+{
+    height: 300px;
+    width: 500px;
+    margin-top: -60px;
+    margin-bottom: -80px;
+}
+
+.titreAccueilH1
+{
+    color: #fffefe88; 
+    font-size: 3em;
+    font-family: 'Impact', fantasy;
+    text-shadow: 
+        -1.8px 0px 0 #000000, 
+        2px -2px 0 #000, 
+        3px 3px 0 #000, 
+        5px 5px 0 #050505,
+        0 0 15px rgba(255, 150, 150, 0.7); 
+}
+
+.boutonEntrer:hover {
+    transform: scale(1.03);
+}
+
+
+/* Page de Connexion */
+
+
+
+
+

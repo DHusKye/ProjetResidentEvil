@@ -1,0 +1,14 @@
+body  {
+    background:url(../ImageResidentEvil/Resident-Evil-Villagehomme.jpg);
+    background-size: cover;
+}
+
+.titre{
+    color:black;
+}
+
+.encadrement{
+    width: 700px;
+    height: 700px;
+        
+}
