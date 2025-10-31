@@ -5,17 +5,17 @@ require 'dbResidentEvil.php';
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     
     $id = $_POST['id'] ;
-    $nom = $_POST['nom'] ;
-    $prenom = $_POST['prenom'];
-    $age = $_POST['age'] ;
-    $sexe = $_POST['sexe'];
-    $email = $_POST['email'];
+    $nom = $_POST['nomUtilisateur']; ;
+    $prenom = $_POST['prenomUtilisateur']; ;
+    $age = $_POST['ageUtilisateur'] ;
+    $sexe = $_POST['sexeUtilisateur'];
+    $email = $_POST['emailUtilisateur'];
     
     if (!empty($id) && !empty($nom) && !empty($prenom) && !empty($age) && !empty($sexe) && !empty($email)){
 
         try {
-    
-            $sql = "UPDATE utilisateur SET nom = ?, prenom = ?, age = ?, sexe = ?, email = ? WHERE id = ?";
+
+            $sql = "UPDATE utilisateur SET nomUtilisateur = ?, prenomUtilisateur = ?, ageUtilisateur = ?, sexeUtilisateur = ?, emailUtilisateur = ? WHERE id = ?";
 
             $stmt = $pdo->prepare($sql);
             

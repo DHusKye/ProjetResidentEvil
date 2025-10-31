@@ -26,8 +26,8 @@
         </div>
 
         <div class="d-flex navbar-right">
-            <a href="#register" class="nav-button register-btn btn me-2">Inscris toi</a>
-            <a href="#login" class="nav-button login-btn btn">Login</a>
+            <a href="pageInscription2.php" class="nav-button register-btn btn me-2">Inscris toi</a>
+            <a href="pageDeConnexion.php" class="nav-button login-btn btn">Login</a>
         </div>
     </div>
 </nav>

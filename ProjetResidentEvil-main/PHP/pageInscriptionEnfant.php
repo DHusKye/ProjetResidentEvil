@@ -1,3 +1,11 @@
+<?php
+    session_start();
+     if (!isset($_SESSION['mdpUtilisateur'])) {
+    header("Location: pageDeConnexion.php");
+ }   
+?>
+
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -26,8 +34,8 @@
         </div>
 
         <div class="d-flex navbar-right">
-            <a href="#register" class="nav-button register-btn btn me-2">Inscris toi</a>
-            <a href="#login" class="nav-button login-btn btn">Login</a>
+            <a href="pageInscription2.php" class="nav-button register-btn btn me-2">Inscris toi</a>
+            <a href="pageDeConnexion.php" class="nav-button login-btn btn">Login</a>
         </div>
     </div>
 </nav>
@@ -81,6 +89,12 @@
             <div class="d-flex justify-content-center" style="margin-bottom: 10px;"><input class="btn-image" type="submit" value="Ajouter"></div>
         </form>
     </div>
+
+    <a href="pageIndex.php">
+        <button>
+            Retour
+        </button>
+    </a> 
     
 </div>
 </body>

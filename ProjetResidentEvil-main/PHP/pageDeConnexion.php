@@ -5,16 +5,16 @@ $pdo = new PDO("mysql:host=localhost;dbname=residentEvil", "root", "root");
 // var_dump($_POST);
 
 if(isset($_POST['envoi'])){
- if(!empty($_POST['nomUtilisateur']) && !empty($_POST['mdp'])){
+ if(!empty($_POST['nomUtilisateur']) && !empty($_POST['mdpUtilisateur'])){
     $pseudo = htmlspecialchars($_POST['nomUtilisateur']);
-    $mdp = sha1($_POST['mdp']);
+    $mdp = sha1($_POST['mdpUtilisateur']);
 
-    $recupUtilisateur = $pdo->prepare('SELECT * FROM utilisateur WHERE nomUtilisateur = ? AND mdp = ? ');
+    $recupUtilisateur = $pdo->prepare('SELECT * FROM utilisateur WHERE nomUtilisateur = ? AND mdpUtilisateur = ? ');
     $recupUtilisateur->execute(array($pseudo, $mdp));
 
     if($recupUtilisateur->rowCount() > 0){
         $_SESSION['nomUtilisateur'] = $pseudo;
-        $_SESSION['mdp'] = $mdp;
+        $_SESSION['mdpUtilisateur'] = $mdp;
         $_SESSION['id'] = $recupUtilisateur->fetch()['id'];
 
         header('Location: connecter.php');
@@ -69,7 +69,7 @@ if(isset($_POST['envoi'])){
                 
             <div class="mb-3">
                 <label for="password" class="login-label1">Mot de passe</label>
-                <input type="password" class="form-control login-input1" name="mdp" required>
+                <input type="password" class="form-control login-input1" name="mdpUtilisateur" required>
             </div>
                 
             <div class="d-grid mt-4">
@@ -78,6 +78,12 @@ if(isset($_POST['envoi'])){
                 </button>
             </div>
         </form>
+
+    <a href="pageIndex.php">
+        <button>> 
+            Retour
+        </button>
+    </a> 
        
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>

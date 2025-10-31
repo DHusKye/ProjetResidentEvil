@@ -31,8 +31,8 @@
             </div>
 
             <div class="d-flex navbar-right">
-                <a href="#register" class="nav-button register-btn btn me-2">Inscris toi</a>
-                <a href="#login" class="nav-button login-btn btn">Login</a>
+                <a href="pageInscription2.php" class="nav-button register-btn btn me-2">Inscris toi</a>
+                <a href="pageDeConnexion.php" class="nav-button login-btn btn">Connexion</a>
             </div>
         </div>
     </nav>
@@ -56,10 +56,10 @@
         </span>
     </div>
 
-    <a href="#inscrire-enfant" class="action-text text-enfant">Enfant pris à charge</a>
-    <a href="#inscrire-enfant" class="action-text text-inscription">Inscrit ton Enfant</a>
-    <a href="#inscrire-prof" class="action-text text-prof">Information Prof</a>
-    <a href="#restauration" class="action-text text-restauration">Restauration</a>
+    <a href="pageTableaux.php" class="action-text text-enfant">Enfant pris à charge</a>
+    <a href="pageInscriptionEnfant.php" class="action-text text-inscription">Inscrit ton Enfant</a>
+    <a href="pageProf.php" class="action-text text-prof">Information Prof</a>
+    <a href="pageRestauration.php" class="action-text text-restauration">Restauration</a>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>

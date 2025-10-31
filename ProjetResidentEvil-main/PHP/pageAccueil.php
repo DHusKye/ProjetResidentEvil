@@ -28,7 +28,9 @@
         <h1 class="main-text text-center">Inscrivez vos enfants chez nous</h1>
         
         <div id="enterButtonContainer">
-            <img id="enterButton" src="../ImageResidentEvil/unnamed-removebg-preview (3).png" class="enter-button btn btn-lg text-uppercase mt-4">
+            <a href="pageIndex.php">
+                <img id="enterButton" src="../ImageResidentEvil/unnamed-removebg-preview (3).png" class="enter-button btn btn-lg text-uppercase mt-4">
+            </a>
         </div>
         
         <img class="logo" src="../ImageResidentEvil/Capture_d_écran_21-10-2025_165237_www.canva.com-removebg-preview.png">
