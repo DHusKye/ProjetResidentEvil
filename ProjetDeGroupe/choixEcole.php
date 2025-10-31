@@ -10,7 +10,7 @@ $id = $_GET['id'];
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['ecole'])) {
     $ecole = $_POST['ecole'];
 
-    $sql = "UPDATE tableauEnfants SET ecole = ? WHERE id = ?";
+    $sql = "UPDATE tableau_enfants SET ecole = ? WHERE id = ?";
     $stmt = $pdo->prepare($sql);
     $stmt->execute([$ecole, $id]);
 

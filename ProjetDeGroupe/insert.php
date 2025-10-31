@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $souvenirs = $_POST['souvenirs'];
 
         try {
-            $sql = "INSERT INTO tableauEnfants (nom, prenom, dateDeNaissance, taille, poids, sexe, dateDarrivee, souvenirs) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+            $sql = "INSERT INTO tableau_enfants (nom, prenom, dateDeNaissance, taille, poids, sexe, dateDarrivee, souvenirs) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
             $stmt = $pdo->prepare($sql);
             $stmt->execute([$nom, $prenom, $dateDeNaissance, $taille, $poids, $sexe, $dateDarrivee, $souvenirs]);
             
