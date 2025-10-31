@@ -1,5 +1,5 @@
 <?php
-require 'db.php';
+include '../db/db.php';
 
 if (!isset($_GET['id'])) {
     die("Erreur : aucun ID d'enfant reçu.");

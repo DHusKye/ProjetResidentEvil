@@ -20,7 +20,7 @@
 </div>
 <div class="d-flex justify-content-center align-items-center">
 <?php
-require 'db.php';
+include '../db/db.php';
 $tableauEnfants = $pdo->query('SELECT * FROM tableau_enfants');
 ?>
 

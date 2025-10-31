@@ -94,7 +94,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: url('../ressources/noisy-texture-300x300-o18-d10-c-4f4f4f-t1.png');
+  background: url('../ressources/texture.png');
   opacity: 0.4;
   pointer-events: none;
   z-index: 0;
@@ -147,7 +147,7 @@ input.form-control {
 }
 
 .btn-image {
-  background-image: url(../ressources/file_000000006754620db03eb2767964543f.png);
+  background-image: url(../ressources/bouton.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

@@ -36,7 +36,7 @@
     <div><h1 class="road-rage-regular darkRed fontSize mt-3 ms-5">Inscris ton enfant</h1></div>
     <div><h2 class="road-rage-regular red taille ms-5 mb-4">Formulaire de dépôt (sans retour possible)</h2></div>
     <div class="d-flex justify-content-center">
-        <form action="insert.php" method="POST" class="row">
+        <form action="../php/insert.php" method="POST" class="row">
             <div class="d-flex justify-content-center" style="gap: 300px">
                 
                 <div class="d-grid gap-3 w-50">
