@@ -10,15 +10,15 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="../CSS/tableaux.css">
+    <link rel="stylesheet" href="../CSS/test.css">
     <title>Tableaux des gosses</title>
 </head>
 
-<body>
+<body class="bodyTableaux">
     
 <div class="titre text-body-secondary d-flex justify-content-center align-items-center m-4">
     <h1 class="titre">Tableaux de stockage des enfants</h1>
-</div>
+</div>++
 
 
 <table class="d-flex justify-content-center align-items-center fs-5 m-5 ">

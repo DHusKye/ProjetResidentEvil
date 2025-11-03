@@ -1,8 +1,18 @@
-<?php    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/test.css">
+    <title>Document</title>
+</head>
+<body>
+
+ <header>
     <nav class="navbar main-navbar navbar-expand-lg sticky-top p-3" data-bs-theme="dark">
         <div class="container-fluid">
-            <a class="navbar-brand d-flex align-items-center navbar-gauche" href="#">
-                <img src="../ImageResidentEvil/Capture_d_écran_21-10-2025_165237_www.canva.com-removebg-preview.png" alt="Logo" class="navbar-logo">
+            <a class="navbar-brand d-flex align-items-center navbar-gauche" href="pageAccueil.php">
+                <img src="../ImageResidentEvil/logo.png" alt="Logo" class="navbar-logo">
                 <span class="navbar-title ms-3">Orphelinat</span>
             </a>
 
@@ -18,4 +28,7 @@
             </div>
         </div>
     </nav>
-?>
+
+</header>
+</body>
+</html> 

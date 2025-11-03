@@ -10,48 +10,17 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="../CSS/restauration.css">
+    <link rel="stylesheet" href="../CSS/test.css">
     <link rel="stylesheet" href="../neigeTombante/neigeTombante.css">
-    <link rel="stylesheet" href="../CSS/contour.css">
     <link rel="icon" href="../CSS/Logo.png">
-    <link rel="stylesheet" href="../CSS/header.css">
 
 
     <title>Restauration</title>
 </head>
 
-
-<body class="mb-5">
+<body class="mb-5 bodyRestauration">
     
-
-    
-    <header class="positionRelative">
-    
-        <nav class="navbar main-navbar navbar-expand-lg sticky-top p-3" data-bs-theme="dark">
-            <div class="container-fluid">
-                <a class="navbar-brand d-flex align-items-center navbar-gauche" href="#">
-                    <img src="../ImageResidentEvil/Logo.png" alt="Logo" class="navbar-logo">
-                    <span class="navbar-title ms-3">Orphelinat</span>
-                </a>
-    
-                <div class="d-flex navbar-centre-links me-auto ms-5">
-                    <a href="#link1" class="mystery-box mx-1"><span class="box-text">Lien 1</span></a>
-                    <a href="#link2" class="mystery-box mx-1"><span class="box-text">Lien 2</span></a>
-                    <a href="#link3" class="mystery-box mx-1"><span class="box-text">Lien 3</span></a>
-                </div>
-    
-                <div class="d-flex navbar-right">
-                    <a href="#register" class="nav-button register-btn btn me-2">Inscris toi</a>
-                    <a href="#login" class="nav-button login-btn btn">Login</a>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-
-
-
-
+   <?php include'header.php' ?>
 
     <!-- Bouton de réglage de neige -->
 
@@ -64,16 +33,7 @@
 
     <canvas id="snow-canvas" aria-hidden="true"></canvas>
 
-
-
-
-
     <!-- Premier Cadre -->
-
-
-
-
-
 
     <div class="frame-neon mt-5">
                 <!-- Coins lumineux -->
@@ -102,16 +62,7 @@
         </div>
     </div>
 
-
-
-
-
     <!-- Deuxieme Cadre -->
-
-
-
-
-
     
         <div class="d-flex justify-content-around flex-row-reverse mt-5">
 
@@ -132,16 +83,8 @@
             </div>
 
         </div>
-    
-
-
-
 
     <!-- Troisieme Cadre -->
-
-
-
-
 
     <div class="frame-neon mt-5">
                     <!-- Coins lumineux -->
@@ -171,13 +114,7 @@
         </div>
     </div>
 
-
-
-
     <!-- Quatrieme Cadre -->
-
-
-
 
     <div class="d-flex justify-content-around flex-row-reverse mt-5">
 
@@ -199,13 +136,7 @@
 
     </div>
 
-
-
-
     <!-- Cinquieme Cadre -->
-
-
-
 
     <div class="frame-neon mt-5">
                     <!-- Coins lumineux -->
@@ -217,7 +148,7 @@
         <div class="d-flex justify-content-around mt-5 mb-5 ">
 
             <div class="image-zoom">
-                <img class="imageTailleCinquieme" src="../ImageResidentEvil/Cuisine/versDeFromage.png" alt="Gateau Résident Evil">
+                <img class="imageTailleTroisieme" src="../ImageResidentEvil/Cuisine/versDeFromage.png" alt="Gateau Résident Evil">
             </div>
 
             <div class="d-flex flex-column align-items-center ">
@@ -235,13 +166,7 @@
         </div>
     </div>
 
-
-
-
     <!-- Sixieme Cadre -->
-
-
-
 
     <div class="d-flex justify-content-around flex-row-reverse mt-5">
 
@@ -262,12 +187,6 @@
         </div>
 
     </div>
-   
-
-
-
-
-
 
 <script src="../neigeTombante/neigeTombante.js"></script> 
 

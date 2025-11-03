@@ -38,35 +38,36 @@ if(isset($_POST['envoi'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Château de Dimitrescu - Accueil</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-    <link rel="stylesheet" href="../CSS/test.css">
-
+    
     <link href="https://fonts.googleapis.com/css2?family=Nosifier&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/css.css">
 </head>
 
 <body class="accueil"> 
 
 
-    <div>
+    
         <button>
-            Retour à l'accueil
+            <a href="pageIndex.php" style='text-decoration:none; color:black;'>
+                Retour à l'accueil
+            </a>
         </button>
-    </div>
+    
+    <div class="d-flex flex-column justify-content-end align-items-center marginTop">
 
-    <div class='d-flex justify-content-center '>
+        <h1 class="titreAccueilH1 d-flex justify-content-center">Connecte toi </h1>
 
-        <form action="" method='POST' class="titreAccueil">
+        <form action="" method='POST'>
             
-            <div class='p-2 d-flex'>
+            <div class='p-2 d-flex justify-content-center'>
                 <label for="Nom Utilisateur" class="d-flex align-items-center  pe-5">Nom d'Utilisateur </label>
                 <input type="text" name="nomUtilisateur" required>
             </div>
 
-            <div class='p-2 d-flex'>
+            <div class='p-2 d-flex justify-content-center '>
                 <label for="Nom Utilisateur" class="d-flex align-items-center  pe-5">Mots de passe</label>
-                <input type="text" name="nomUtilisateur" required>
+                <input type="password" name="mdpUtilisateur" required>
             </div>
-            
-            
             
             <div class="mt-3 p-2 d-flex justify-content-center">
                 <button class='' type='submit' name="envoi">

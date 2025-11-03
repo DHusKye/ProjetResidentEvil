@@ -17,7 +17,7 @@
         <source src="../ImageResidentEvil/screaming-woman-in-the-basement.mp3" type="audio/mpeg">
     </audio>
 
-    <div class='d-flex flex-column align-items-center justify-content-end titreAccueil'>
+    <div class='d-flex flex-column align-items-center justify-content-end marginTop'>
 
         <div class='d-flex align-items-end'>
             <h1 class='titreAccueilH1'>Inscrivez vos enfants chez nous</h1>
