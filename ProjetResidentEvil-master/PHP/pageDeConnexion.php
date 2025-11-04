@@ -29,17 +29,7 @@ if(isset($_POST['envoi'])){
 
 }
 
-
-
 ?>
-
-
-
-
-
-
-
-
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -48,45 +38,47 @@ if(isset($_POST['envoi'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Château de Dimitrescu - Accueil</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-    <link rel="stylesheet" href="../CSS/pageDeConnexion.css">
-
-    <link href="https://fonts.googleapis.com/css2?family=Nosifier&display=swap" rel="stylesheet">
-</head>
-<body>
-    <img class="background-image" src="../ImageResidentEvil/Resident-Evil-Villagehomme.jpg">
-
-     <h1>Login</h1> 
-    <div class="page-container d-flex flex-column align-items-center justify-content-center vh-100">
-    <div class="background_encadrement"></div> 
-      <img class="encadrement" src="../ImageResidentEvil/Gemini_Generated_Image_7pkgtx7pkgtx7pkg-removebg-preview.png">
     
-   
-        <form action="" method="POST"> 
-            <div class="mb-3">
-                <label for="username" class="login-label">Nom d'utilisateur</label>
-                <input type="text" class="form-control login-input" name='nomUtilisateur' required>
+    <link href="https://fonts.googleapis.com/css2?family=Nosifier&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/test.css">
+</head>
+
+<body class="accueil"> 
+
+
+    
+        <button>
+            <a href="pageIndex.php" style='text-decoration:none; color:black;'>
+                Retour à l'accueil
+            </a>
+        </button>
+    
+    <div class="d-flex flex-column justify-content-end align-items-center marginTop">
+
+        <h1 class="titreAccueilH1 d-flex justify-content-center">Connecte toi </h1>
+
+        <form action="" method='POST'>
+            
+            <div class='p-2 d-flex justify-content-center'>
+                <label for="Nom Utilisateur" class="d-flex align-items-center  pe-5">Nom d'Utilisateur </label>
+                <input type="text" name="nomUtilisateur" required>
             </div>
-                
-            <div class="mb-3">
-                <label for="password" class="login-label1">Mot de passe</label>
-                <input type="password" class="form-control login-input1" name="mdpUtilisateur" required>
+
+            <div class='p-2 d-flex justify-content-center '>
+                <label for="Nom Utilisateur" class="d-flex align-items-center  pe-5">Mots de passe</label>
+                <input type="password" name="mdpUtilisateur" required>
             </div>
-                
-            <div class="d-grid mt-4">
-                <button type="submit" name="envoi" class="btn btn-danger text-uppercase login-btn">
+            
+            <div class="mt-3 p-2 d-flex justify-content-center">
+                <button class='' type='submit' name="envoi">
                     Connexion
                 </button>
             </div>
+            
         </form>
-
-    <a href="pageIndex.php">
-        <button>> 
-            Retour
-        </button>
-    </a> 
-       
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 
+    
+        
 </body>
 </html>

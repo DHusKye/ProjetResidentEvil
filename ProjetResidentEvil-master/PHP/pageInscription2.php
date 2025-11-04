@@ -29,87 +29,70 @@ if(isset($_POST['envoi'])){    // lorsque l'on clique sur le bouton envoie , la 
 
 ?>
 
-
-
-
-
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/inscription2.css">
+    <link rel="stylesheet" href="../CSS/test.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>inscription</title>
 </head>
-<body>
+<body class='accueil'>
 
-     <h1>Inscription</h1> 
+    
+    
+    <a href="pageIndex.php">
+        <button> 
+            Retour
+        </button>
+    </a> 
+    
+    
+    <div class=" d-flex flex-column align-items-center justify-content-center ">
+    
+        <h1 class="titreAccueilH1 d-flex justify-content-center marginTopInscription">Inscription</h1> 
 
-    <div class="page-container d-flex flex-column align-items-center justify-content-center vh-100">
+   
+        <form action="" method="POST"> 
 
-    <div class="d-flex">
-
-        
-        
-        
-        <form action="#" method="POST"> 
-
-            <img class="encadrement" src="../ImageResidentEvil/Gemini_Generated_Image_7pkgtx7pkgtx7pkg-removebg-preview.png">
+            <img class="encadrement " src="../ImageResidentEvil/Gemini_Generated_Image_7pkgtx7pkgtx7pkg-removebg-preview.png">
             
-            <div class="mb-3">
-                <label for="username" class="login-label">Nom</label>
-                <input type="text" class="form-control login-input" name="nomUtilisateur"  required>
+            <div class="d-flex mb-3 mt-1 marginInput">
+                <div class="me-3">
+                    <label for="username" class="">Nom</label>
+                    <input type="text" class="tailleInputOne" name="nomUtilisateur" required>
+                </div>
+                <div>
+                    <label for="password" class="">Prenom</label>
+                    <input type="text" class="tailleInputOne" name="prenomUtilisateur" required>
+                </div>
             </div>
             
-            <div class="mb-3">
-                <label for="password" class="login-label1">Prenom</label>
-                <input type="text" class="form-control login-input1" name="prenomUtilisateur" required>
+            <div class="mb-3 marginInput">
+                <label for="password" class="">Email</label>
+                <input type="email" class="tailleInputTwo" name="emailUtilisateur" required>
+            </div>
+           
+            <div class="mb-3 marginInputAge">
+                <label for="password" class="">Age</label>
+                <input type="number" name="ageUtilisateur" required>
             </div>
             
-            <div class="mb-3">
-                <label for="password" class="login-label1">Age</label>
-                <input type="number" class="form-control login-input1" name="ageUtilisateur" required>
+            
+            <div class="mb-3 marginInput">
+                <label for="password" class="">Mot de passe</label>
+                <input type="password" class="tailleInputFour" name="mdpUtilisateur" required>
             </div>
             
-            <div class="mb-3">
-                <label for="password" class="login-label1">Email</label>
-                <input type="email" class="form-control login-input1" name="emailUtilisateur" required>
-            </div>
-            
-            <div class="mb-3">
-                <label for="password" class="login-label1">Mot de passe</label>
-                <input type="password" class="form-control login-input1" name="mdpUtilisateur" required>
-            </div>
-            
-            <div class="d-grid mt-4">
-                <button type="submit" name="envoi" class="btn btn-danger text-uppercase login-btn">
+            <div class=" mt-4 marginInputBouton">
+                <button type="submit" name="envoi" class="btn btn-danger text-uppercase ">
                     valider mon Inscription
                 </button>
             </div>
         </form>
         
-
-        <a href="pageIndex.php">
-        <button>> 
-            Retour
-        </button>
-    </a> 
-    
-    </div>
-
     </div> 
-
-
-  
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-
 
 </body>
 </html>
