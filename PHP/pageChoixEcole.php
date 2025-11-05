@@ -1,66 +1,54 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<?php 
+include 'header.php';
+include 'dbResidentEvil.php';
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jolly+Lodger&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+if (!isset($_GET['id'])) {
+    die("Erreur : aucun ID d'enfant reçu.");
+}
 
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+$id = $_GET['id'];
 
-    <link rel="stylesheet" href="../CSS/test.css">
-    <title>Choix de l'école</title>
-</head>
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['ecole'])) {
+    $ecole = $_POST['ecole'];
 
-<body class="bg-black">
+    $stmt = $pdo->prepare("UPDATE ville SET  ecole = (SELECT enfant FROM ecole WHERE  ville.id = enfant.id");
+    $stmt->execute([$ecole, $id]);
 
-<div class="d-flex flex-column ">
+    $message = "<p style='color: green;'>École attribuée avec succès !</p>";
+}
+?>
 
-    <div>
-        <div class="bouton heisenbergHouse d-flex justify-content-center align-items-center">
-            <p class="">Heisenberg's House</p>
+<?php $tableaux = $pdo->query('SELECT ecole FROM enfant');
+while ($donnes = $tableaux->fetch())
+{
+?>
+
+<main>
+
+        <div class="d-flex">
+        <form method="POST">
+            <input type="hidden" name="id" value="<?php echo htmlspecialchars($id); ?>"> 
+            <div><button type="submit" name="ecole" value="Heisenberg's House" class="mt-4 ms-4"><?php echo $donnes['ecole'];?></button></div>
+        </form>
         </div>
+        <?php 
+            }
+        ?>
+    <div class="mt-5">
+
+        <?php if (!empty($message)) {
+            echo $message; 
+        }
+        ?>
     </div>
 
-    <div>
-        <div class=" bouton d-flex justify-content-center align-items-center border bg-danger">
-            <p>Moreau's Lab</p>
-        </div>
+    <div class="mt-5">
+        <a href='tableaux.php'>Voir la liste des enfants</a><br>
     </div>
 
-    <div>
-        <div class=" bouton d-flex justify-content-center align-items-center mt-4 border bg-danger">
-            <p>Luiza's House</p>
-        </div>
+    <div class="mt-2">
+        <a href='inscristonenfant.php'>Retourner à la page d'inscription</a>
     </div>
 
-    <div>
-        <div class=" bouton d-flex justify-content-center align-items-center mt-4 border bg-danger">
-            <p>Stronghold</p>
-        </div>
-    </div>
-
-    <div>
-        <div class=" bouton d-flex justify-content-center align-items-center mt-4 border bg-danger">
-            <p>Drowned Houses</p>
-        </div>
-    </div>
-
-    <div>
-        <div class=" bouton d-flex justify-content-center align-items-center mt-4 border bg-danger">
-            <p>Château Dimitrescu</p>
-        </div>
-    </div>     
-       
-</div>  
-    
-    
-    
-    
-    
-
-</body>
-</html>
+</main>
+</html>     

@@ -1,6 +1,6 @@
 <?php 
 session_start();
-$pdo = new PDO("mysql:host=localhost;dbname=residentevil", "root", "");
+require 'dbResidentEvil.php';
 if(isset($_POST['envoi'])){    // lorsque l'on clique sur le bouton envoie , la fonction if commence a partie de la en eexplicquant que si on clique sur envoie la fonction commence
     if(!empty($_POST['nomUtilisateur']) && !empty($_POST['mdpUtilisateur']) && !empty($_POST['prenomUtilisateur']) && !empty($_POST['ageUtilisateur']) && !empty($_POST['emailUtilisateur'])){
 
@@ -58,10 +58,10 @@ if(isset($_POST['envoi'])){    // lorsque l'on clique sur le bouton envoie , la 
 
             <img class="encadrement " src="../ImageResidentEvil/Gemini_Generated_Image_7pkgtx7pkgtx7pkg-removebg-preview.png">
             
-            <div class="d-flex mb-3 mt-3 marginInput">
+            <div class="d-flex mb-3 mt-1 marginInput">
                 <div class="me-3">
                     <label for="username" class="">Nom</label>
-                    <input type="text" class="tailleInputOne" name="nomUtilisateur"  required>
+                    <input type="text" class="tailleInputOne" name="nomUtilisateur" required>
                 </div>
                 <div>
                     <label for="password" class="">Prenom</label>
@@ -85,7 +85,7 @@ if(isset($_POST['envoi'])){    // lorsque l'on clique sur le bouton envoie , la 
                 <input type="password" class="tailleInputFour" name="mdpUtilisateur" required>
             </div>
             
-            <div class=" mt-4  marginInputAge">
+            <div class=" mt-4 marginInputBouton">
                 <button type="submit" name="envoi" class="btn btn-danger text-uppercase ">
                     valider mon Inscription
                 </button>

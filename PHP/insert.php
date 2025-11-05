@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
             $stmt ->execute([$nom, $prenom, $age, $sexe, $email]);
 
             // Rediction vers l'accueil si tou s'est bien passé
-            header("Location: inscription.php");
+            header("Location: pageIndex.php");
             exit;
 
         } catch (PDOException $e ) {
@@ -38,7 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
     }else {
            // si des champs sont mnquants ou vides
         echo "<p style='color:red;'> Tous les champs sont obligatoires.</p>";
-        echo "<p><a href='inscription.php'> Retour</a></p>";
+        echo "<p><a href='pageIndex.php'> Retour</a></p>";
 
         
     }
@@ -46,7 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
 }else{
     //si quelqu'un tente d'accéder au script sans POST
     echo "<p style='color:red;'>Méthode non autorisée.</p>";
-    echo "<p><a href='inscription.php'> Retour</a></p>";
+    echo "<p><a href='pageIndex.php'> Retour</a></p>";
 }
 
 

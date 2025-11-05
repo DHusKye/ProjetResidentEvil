@@ -1,5 +1,9 @@
 /* Page d'accueil */
 
+main {
+    overflow: hidden;
+}
+
 .accueil{
     background: url(../ImageResidentEvil/Resident-Evil-Villagehomme.jpg);
     background-size: cover;
@@ -48,8 +52,8 @@
 /*Pade d'Inscription */
 
 .encadrement{
-    width: 700px;
-    height: 700px;
+    width: 750px;
+    height: 750px;
     margin-bottom: -480px;
     margin-top: -100px;
 }
@@ -66,18 +70,24 @@
     color: red;
 }
 
+.marginInputBouton
+{
+    margin-left: 260px;
+    color: red;
+}
+
 .tailleInputOne
 {
-    padding-left: 10px;
+    padding-left: 0px;
 }
 .tailleInputTwo
 {
-    padding-right: 280px;
+    padding-right: 250px;
 }
 
 .tailleInputFour
 {
-    padding-right: 220px;
+    padding-right: 195px;
 }
 .marginTopInscription
 {
@@ -104,11 +114,11 @@
     font-size: 3.5em;
 }
 
-/* img {
+.imageRestauration {
     width: 800px;
     transition: 1s;
     position: relative;
-}  */
+}  
 
 .image-zoom
 {
@@ -206,7 +216,7 @@
 .bodyTableaux
 {
     background: 
-    url('/ProjetResidentEvil-main/ImageResidentEvil/FoetusTableaux.jpg') no-repeat;
+    url('../ImageResidentEvil/FoetusTableaux.jpg') no-repeat;
     background-size: cover;
     font-family: "Road Rage", sans-serif;
     width: 100%;
@@ -240,23 +250,33 @@
 /* NAV  */
 
 /* --- Configuration du Body (Fond du Château) --- */
-
 .navbar.main-navbar {
     background-color: rgba(0, 0, 0, 0.8) !important;
-    border-bottom: 2px solid #5a4b3d;
+    border-bottom: 2px solid #440000;
 }
 
 .navbar-logo {
-    width: 80px; 
-    height: 70px;
+    width: 90px; 
+    height: 80px;
+}
+
+.navbarMargeLogo
+{
+    margin-left: 600px;
 }
 
 .navbar-title {
-    color: red;
-    font-family: 'Times New Roman', serif;
-    font-size: 24px;
+    color: var(--couleur-lueur) !important;
+    font-family: "Eater", serif;
+    font-size: 2rem;
     font-weight: bold;
-    text-shadow: 0 0 5px rgba(255, 0, 0, 0.8); 
+    text-shadow: 0 0 5px rgba(145, 49, 49, 0.8); 
+}
+
+.bar_Nav{
+   background-color: #640000;
+   height: 60px;
+   width: 2px;
 }
 
 .navbar-centre-links {
@@ -270,7 +290,7 @@
     justify-content: center;
     align-items: center; 
     text-decoration: none;
-    background-image: url('../ImageResidentEvil/ContourBouton.png');
+    background-image: url('../img page de choix/unnamed-removebg-preview (7).png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -278,10 +298,9 @@
 }
 
 .box-text {
-    color: red;
+    color: var(--couleur-lueur);
     font-family: Arial, sans-serif;
     font-size: 16px;
-    font-weight: bold;
     text-shadow: 0 0 5px rgb(71, 3, 3);
 }
 
@@ -290,7 +309,8 @@
 }
 
 .nav-button {
-    padding: 8px 15px;
+    padding: 10px 30px;
+    margin-right:600px ;
     text-decoration: none;
     font-family: Arial, sans-serif;
     font-size: 16px;
@@ -407,6 +427,12 @@ input.form-control {
   z-index: 0;
 }
 
+.directeurImage {
+  margin-left: 20px;
+  width: 450px;
+  height: 350px;
+}
+
 .container {
   position: relative;
   z-index: 1;
@@ -478,28 +504,21 @@ input.form-control {
 
 .lady {
     width: 300px; 
-    height: auto; 
+    height: 500px; 
     right: 15%;
     bottom: 3%;
 }
 
 .fleche-gauche {
-    height: 100px;
-    transform: rotate(30deg);
-
+    transform: rotate(25deg);
 }
 .fleche-haut {
-    height: 100px;
     transform: rotate(115deg);
 }
 .fleche-droit {
-    height: 100px;
     transform: rotate(205deg);
 }
 .fleche-bas{
-    left: 48.5%;
-    bottom: 1%;
-    height: 100px;
     transform: rotate(295deg);
 }
 
@@ -536,7 +555,6 @@ input.form-control {
     font-size: 22px;
     font-weight: bold;
     text-decoration: none;
-    text-shadow: 1px 1px 3px black;
 }
 .textHover:hover {
     transform: scale(1.2); 
@@ -586,3 +604,47 @@ input.form-control {
 }
 
 
+/* Test index */
+
+.marginTopIndex
+{
+  margin-top: 360px ;
+}
+
+.imageFleche
+{
+  width: 100px;
+}
+
+.decalageGauche
+{
+  margin-top: 12px ;
+  margin-left: 10px;
+}
+
+.decalageDroite
+{
+  margin-top: -10px ;
+  margin-right: 10px;
+}
+
+.decalageHaut
+{
+  margin-right: 60px;
+}
+
+.decalageHautTexte
+{
+  margin-bottom: 50px;
+}
+
+.decalageBas
+{
+  margin-left: 45px;
+}
+
+.decalageBasTexte
+{
+  margin-left: 40px;
+  padding-top: 60px;
+}

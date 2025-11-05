@@ -12,9 +12,6 @@
 
     <link rel="stylesheet" href="../CSS/test.css">
     <link rel="stylesheet" href="../neigeTombante/neigeTombante.css">
-    <link rel="icon" href="../CSS/Logo.png">
-
-
     <title>Restauration</title>
 </head>
 
@@ -44,8 +41,8 @@
     
         <div class="d-flex justify-content-around mt-5 mb-5">
 
-            <div class="image-zoom">
-                <img class="imageTaillePremier" src="../ImageResidentEvil/Cuisine/gateau.jpg" alt="Gateau Résident Evil">
+            <div class="image-zoom ">
+                <img class="imageTaillePremier imageRestauration" src="../ImageResidentEvil/Cuisine/gateau.jpg" alt="Gateau Résident Evil">
             </div>
 
             <div class="d-flex flex-column align-items-center ">
@@ -67,7 +64,7 @@
         <div class="d-flex justify-content-around flex-row-reverse mt-5">
 
             <div class="image-zoom">
-                <img class="imageTailleDeuxieme" src="../ImageResidentEvil/Cuisine/bouillonDeTripes.webp" alt="Gateau Résident Evil">
+                <img class="imageTailleDeuxieme imageRestauration" src="../ImageResidentEvil/Cuisine/bouillonDeTripes.webp" alt="Gateau Résident Evil">
             </div>
 
             <div class="d-flex flex-column align-items-center ">
@@ -96,7 +93,7 @@
         <div class="d-flex justify-content-around mt-5 mb-5">
 
             <div class="image-zoom">
-                <img class="imageTailleTroisieme" src="../ImageResidentEvil/Cuisine/tableRond.jpg" alt="Gateau Résident Evil">
+                <img class="imageTailleTroisieme imageRestauration" src="../ImageResidentEvil/Cuisine/tableRond.jpg" alt="Gateau Résident Evil">
             </div>
 
             <div class="d-flex flex-column align-items-center ">
@@ -119,7 +116,7 @@
     <div class="d-flex justify-content-around flex-row-reverse mt-5">
 
         <div class="image-zoom">
-            <img class="imageTailleQuatrieme" src="../ImageResidentEvil/Cuisine/puréeCafardeuse.jpg" alt="Gateau Résident Evil">
+            <img class="imageTailleQuatrieme imageRestauration" src="../ImageResidentEvil/Cuisine/puréeCafardeuse.jpg" alt="Gateau Résident Evil">
         </div>
 
         <div class="d-flex flex-column align-items-center ">
@@ -148,7 +145,7 @@
         <div class="d-flex justify-content-around mt-5 mb-5 ">
 
             <div class="image-zoom">
-                <img class="imageTailleTroisieme" src="../ImageResidentEvil/Cuisine/versDeFromage.png" alt="Gateau Résident Evil">
+                <img class="imageTailleTroisieme imageRestauration" src="../ImageResidentEvil/Cuisine/versDeFromage.png" alt="Gateau Résident Evil">
             </div>
 
             <div class="d-flex flex-column align-items-center ">
@@ -171,7 +168,7 @@
     <div class="d-flex justify-content-around flex-row-reverse mt-5">
 
         <div class="image-zoom">
-            <img class="imageTailleSixieme" src="../ImageResidentEvil/Cuisine/leDernierRepas.webp" alt="Gateau Résident Evil">
+            <img class="imageTailleSixieme imageRestauration" src="../ImageResidentEvil/Cuisine/leDernierRepas.webp" alt="Gateau Résident Evil">
         </div>
 
         <div class="d-flex flex-column align-items-center ">

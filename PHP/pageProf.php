@@ -13,14 +13,14 @@
 </head>
 <body class="bodyProf m-0 w-100 h-100">
 
-<?php include'header.php'; ?>
+<?php include 'header.php'; ?>
 
 <div class="container m-0 w-100 h-100">
     <div><h1 class="road-rage-regular darkRed fontSize mt-5 ms-5 mb-5">Info Profs</h1></div>
 
     <div class="d-flex justify-content-center">
-        <div class="d-flex justify-content-start rectangle rounded-5 mt-2 w-100 h-25 ms-5 me-5">
-            <img src="../ImageResidentEvil/directeur.png" class="w-25 m-5" alt="directeur">
+        <div class="d-flex justify-content-start rectangle  mt-2  ms-5 me-5">
+            <img src="../ImageResidentEvil/directeur.png" class="directeurImage" alt="directeur">
             <div class="d-flex row p-2">
                 <div>
                     <h2 class="road-rage-regular red fontSize">Jack Baker (Directeur) :<h2>
@@ -48,7 +48,7 @@
                 </div>
                 <div>
                     <div class="d-flex rectangle rounded-5 mt-5 ms-5 pb-5 w-100">
-                        <img src="../ImageResidentEvil/proffille.png" class="w-25 h-25 mt-5 ms-5" alt="prof">
+                        <img src="../ImageResidentEvil/proffille.png" class="directeurImage mt-5" alt="prof">
                         <div class="d-flex row">
                             <div class="mt-3">
                                 <h2 class="road-rage-regular red fontSize">Mia (Prof) :</h2>
@@ -79,7 +79,7 @@
 
     <div class="d-flex justify-content-center">
         <div class="d-flex justify-content-start rectangle rounded-5 h-25 w-100 mt-5 ms-5 me-5 p-5">
-            <img src="../ImageResidentEvil/cuisiniere.png" class="w-25 mt-2 mb-2 ms-5" alt="cuisiniere">
+            <img src="../ImageResidentEvil/cuisiniere.png" class="directeurImage" alt="cuisiniere">
             <div class="d-flex row">
                 <div class="ms-5 ps-5 mt-5">
                     <h2 class="road-rage-regular red fontSize">Cuisinière :<h2>

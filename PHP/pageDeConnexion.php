@@ -1,6 +1,6 @@
 <?php
 session_start();
-$pdo = new PDO("mysql:host=localhost;dbname=residentEvil", "root", "");
+require 'dbResidentEvil.php';
 
 // var_dump($_POST);
 
@@ -17,7 +17,7 @@ if(isset($_POST['envoi'])){
         $_SESSION['mdpUtilisateur'] = $mdp;
         $_SESSION['id'] = $recupUtilisateur->fetch()['id'];
 
-        header('Location: connecter.php');
+        header('Location: pageIndex.php');
 
     }else {
         echo"Votre mots de passe ou pseudo est mauvais";
@@ -40,7 +40,7 @@ if(isset($_POST['envoi'])){
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
     
     <link href="https://fonts.googleapis.com/css2?family=Nosifier&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../CSS/css.css">
+    <link rel="stylesheet" href="../CSS/test.css">
 </head>
 
 <body class="accueil"> 
