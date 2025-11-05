@@ -1,3 +1,9 @@
+<?php 
+session_start();
+if (!isset($_SESSION['id'])) {
+    header("Location: pageDeConnexion.php");
+}   
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>

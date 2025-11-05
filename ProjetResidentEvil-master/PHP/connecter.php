@@ -1,6 +1,6 @@
 <?php 
 session_start();
-if (!isset($_SESSION['mdpUtilisateur'])) {
+if (!isset($_SESSION['id'])) {
     header("Location: pageDeConnexion.php");
 }   
 ?>

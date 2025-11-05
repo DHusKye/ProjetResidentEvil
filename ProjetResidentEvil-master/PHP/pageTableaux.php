@@ -1,22 +1,14 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<?php   
+include 'header.php';
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jolly+Lodger&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+   if(!isset($_SESSION['id'])) {
+    header('location: pageInscription2.php');
+    exit;
+}
+?>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<main class="bodyTableaux min-vh-100 ">
 
-    <link rel="stylesheet" href="../CSS/test.css">
-    <title>Tableaux des gosses</title>
-</head>
-
-<body class="bodyTableaux">
-
-<?php include 'header.php'; ?>
     
 <div class="titre text-body-secondary d-flex justify-content-center align-items-center m-4">
     <h1 class="titre">Tableaux de stockage des enfants</h1>
@@ -72,5 +64,5 @@
 <audio id="myCrie" src="/Projet/Audio/MontageAudio/ResidentEvilCrieBebe.mp4" autoplay loop ></audio>
 <script src="/Projet/Audio/ParametreAudio/parametreAudioTableauxEnfant.js"></script>
 
-</body>
+</main>
 </html>

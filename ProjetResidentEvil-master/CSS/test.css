@@ -1,5 +1,9 @@
 /* Page d'accueil */
 
+main {
+    overflow: hidden;
+}
+
 .accueil{
     background: url(../ImageResidentEvil/Resident-Evil-Villagehomme.jpg);
     background-size: cover;
@@ -246,23 +250,33 @@
 /* NAV  */
 
 /* --- Configuration du Body (Fond du Château) --- */
-
 .navbar.main-navbar {
     background-color: rgba(0, 0, 0, 0.8) !important;
-    border-bottom: 2px solid #5a4b3d;
+    border-bottom: 2px solid #440000;
 }
 
 .navbar-logo {
-    width: 80px; 
-    height: 70px;
+    width: 90px; 
+    height: 80px;
+}
+
+.navbarMargeLogo
+{
+    margin-left: 600px;
 }
 
 .navbar-title {
-    color: red;
-    font-family: 'Times New Roman', serif;
-    font-size: 24px;
+    color: var(--couleur-lueur) !important;
+    font-family: "Eater", serif;
+    font-size: 2rem;
     font-weight: bold;
-    text-shadow: 0 0 5px rgba(255, 0, 0, 0.8); 
+    text-shadow: 0 0 5px rgba(145, 49, 49, 0.8); 
+}
+
+.bar_Nav{
+   background-color: #640000;
+   height: 60px;
+   width: 2px;
 }
 
 .navbar-centre-links {
@@ -276,7 +290,7 @@
     justify-content: center;
     align-items: center; 
     text-decoration: none;
-    background-image: url('../ImageResidentEvil/ContourBouton.png');
+    background-image: url('../img page de choix/unnamed-removebg-preview (7).png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -284,10 +298,9 @@
 }
 
 .box-text {
-    color: red;
+    color: var(--couleur-lueur);
     font-family: Arial, sans-serif;
     font-size: 16px;
-    font-weight: bold;
     text-shadow: 0 0 5px rgb(71, 3, 3);
 }
 
@@ -296,7 +309,8 @@
 }
 
 .nav-button {
-    padding: 8px 15px;
+    padding: 10px 30px;
+    margin-right:600px ;
     text-decoration: none;
     font-family: Arial, sans-serif;
     font-size: 16px;
@@ -490,7 +504,7 @@ input.form-control {
 
 .lady {
     width: 300px; 
-    height: auto; 
+    height: 500px; 
     right: 15%;
     bottom: 3%;
 }
@@ -594,7 +608,7 @@ input.form-control {
 
 .marginTopIndex
 {
-  margin-top: 430px ;
+  margin-top: 360px ;
 }
 
 .imageFleche
@@ -631,6 +645,6 @@ input.form-control {
 
 .decalageBasTexte
 {
-  margin-left: 40px ;
-  padding-top: 50px;
+  margin-left: 40px;
+  padding-top: 60px;
 }

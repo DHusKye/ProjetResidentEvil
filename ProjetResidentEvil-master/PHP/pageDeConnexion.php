@@ -17,7 +17,7 @@ if(isset($_POST['envoi'])){
         $_SESSION['mdpUtilisateur'] = $mdp;
         $_SESSION['id'] = $recupUtilisateur->fetch()['id'];
 
-        header('Location: connecter.php');
+        header('Location: pageIndex.php');
 
     }else {
         echo"Votre mots de passe ou pseudo est mauvais";
